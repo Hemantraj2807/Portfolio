@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9c54fd751.js" crossorigin="anonymous"></script>
+    <title>HR Portfolio | Contact</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: consolas;
+        } */
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+
+            background: url(pngtreebackground.png);
+            background-size: 1900px 660px;
+            min-height: 100vh;
+            /* height: 90vh;
+            width: 100vw; */
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .container .box {
+            position: relative;
+            width: 320px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 30px;
+            transition: 0.5s;
+            visibility: hidden;
+            animation: fadein;
+            animation-delay: 1s;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadein {
+            from{
+               opacity: 0;
+            }
+            to{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .container .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            border-radius: 8px;
+            transform: skewX(15deg);
+            transition: 0.5s;
+        }
+
+        .container .box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            border-radius: 8px;
+            transform: skewX(15deg);
+            transition: 0.5s;
+            filter: blur(30px);
+            transition: 0.5s;
+        }
+
+        .container .box:hover:before,
+        .container .box:hover:after {
+            transform: skewX(0deg);
+            left: 20px;
+            width: calc(100% - 90px);
+        }
+
+        .container .box:nth-child(1):before,
+        .container .box:nth-child(1):after {
+            background: linear-gradient(315deg, #ffbc00, #ff0058);
+        }
+
+        .container .box:nth-child(2):before,
+        .container .box:nth-child(2):after {
+            background: linear-gradient(315deg, #03a9f4, #ff0058);
+        }
+
+        .container .box:nth-child(3):before,
+        .container .box:nth-child(3):after {
+            background: linear-gradient(315deg, #4dff03, #00d0ff);
+        }
+
+        .container .box span {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 50;
+            pointer-events: none;
+        }
+
+        .container .box span::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transition: 0.5s;
+            animation: animate 2s ease-in-out infinite;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .container .box:hover span::before {
+            top: -50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            opacity: 1;
+        }
+
+        .container .box span::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transition: 0.5s;
+            animation: animate 2s ease-in-out infinite;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            animation-delay: -1s;
+        }
+
+        .container .box:hover span::after {
+            bottom: -50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            opacity: 1;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                transform: translateY(10px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .container .box .content {
+            position: relative;
+            left: 0;
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            transition: 0.5s;
+            color: #fff;
+        }
+
+        .container .box:hover .content {
+            left: -25px;
+            padding: 60px 40px;
+
+        }
+
+        .container .box .content h2 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .container .box .content p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            line-height: 1.4em;
+        }
+
+        .touch {
+            color: white;
+            letter-spacing: 0.2em;
+            font-size: 40px;
+            position: absolute;
+            margin-bottom: 550px;
+            margin-right: 540px;
+            z-index: 2;
+            left: -410px;
+            visibility: hidden;
+            animation-name: touch;
+            /* animation-delay: 1s; */
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes touch {
+            0%{
+                left: -410px;
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                left: 130px;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .border1 {
+            position: absolute;
+            color: #ea4646f7;
+            border-radius: 10px;
+            width: 150px;
+            margin: -5px;
+            /* margin-top: 5px; */
+            margin-bottom: 0;
+            margin-left: 200px;
+            z-index: 2;
+        }
+
+        .border2 {
+            position: absolute;
+            color: #ea4646f7;
+            border-radius: 10px;
+            width: 150px;
+            margin-top: 10px;
+
+            margin-left: 280px;
+        }
+
+        .touch h1 {
+            margin-bottom: 0;
+            font-family: 'Rubik', sans-serif !important;
+            text-shadow: 0 0 15px rgb(18, 18, 54);
+        }
+
+        .touch h1 p {
+            margin: -5px;
+        }
+        #social i{
+            font-size: 35px;
+            padding-bottom: 8px;
+        }
+        #social a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            margin-top: 0;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="touch">
+        <h1>Get In Touch</h1>
+        <p class="border1" style="border:3px solid #ff4d5a ;"></p>
+        <p class="border2" style="border:3px solid #ff4d5a ;"></p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Contact</h2>
+                <p>
+                    <i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp; +91 9693550490 <br>
+                    <i class="fa-brands fa-whatsapp"></i> &nbsp;&nbsp;&nbsp;&nbsp;  +91 9507433534 <br><br>
+                    <i class="fa-solid fa-square-envelope"></i>&nbsp;btech10866.22@bitmesra.ac.in <br>&nbsp;&nbsp; &nbsp; 
+                    hemant.raj3536@gmail.com <br>&nbsp;&nbsp; &nbsp;
+                    thehemantraj28@gmail.com <br>&nbsp;
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Reach Me</h2>
+                <p><b>Institute Add: </b><br>Hostel-7 , BIT Mesra , Ranchi, Jharkhand , 835215</p>
+                <p><b>Home Add: </b><br>House no-1200 , Sec-8C , Bokaro, Jharkhand , 827009</p>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content" id="social">
+                <h2>Social Media</h2>
+                <p>
+                    <i class="fa-brands fa-linkedin"></i> &nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/hemant-raj-09960124b/">Hemant Raj</a> <br>
+                    <i class="fa-brands fa-instagram"></i>&nbsp; &nbsp;&nbsp; <a href="https://www.instagram.com/thehemantraj/">thehemantraj</a> <br>
+                    <i class="fa-brands fa-facebook-f"></i> &nbsp;  &nbsp; &nbsp; <a href="https://www.facebook.com/profile.php?id=100063441316950">Hemant Raj</a><br>
+                    <i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UC8O5-XmtsUmhYn14fR4KQkg">@hemantraj7762</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

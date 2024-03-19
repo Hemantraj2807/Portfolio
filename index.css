@@ -1,0 +1,930 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.navbar {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    margin: 25px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul div {
+    margin-left: 550px;
+    font-weight: bolder;
+}
+
+nav ul a:hover {
+    color: aqua;
+    font-size: 18px;
+    border-bottom: 2px solid aqua;
+}
+
+.scrolldown {
+    position: fixed;
+    writing-mode: vertical-lr;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    bottom: 80px;
+    margin-left: 0;
+    left: 40px;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    color: #fff;
+}
+
+.scrolldown:after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px;
+}
+
+.name_text {
+    position: initial;
+    font-size: 7rem;
+    font-family: 'Rubik', sans-serif !important;
+    line-height: 1;
+    text-shadow: 0 0 15px rgb(18, 18, 54);
+    letter-spacing: 0.1em;
+    margin-bottom: 5.6rem;
+    margin-right: 13.6rem;
+    margin-top: 30px;
+    font-family: "futura_m";
+    font-weight: normal;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+
+}
+
+.border1 {
+    color: #ea4646f7;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.border2 {
+    position: absolute;
+    color: #ea4646f7;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.web-designer {
+    position: absolute;
+    margin-top: 70px;
+    font-size: 20px;
+    letter-spacing: 0.4;
+    z-index: 2;
+    text-shadow: 0 0 15px rgb(18, 18, 54);
+}
+
+/* #name_animation{
+    animation-name: name_animate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+} */
+@keyframes name {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+
+    }
+}
+
+.portfolio {
+    color: #ea4646f7;
+    position: absolute;
+    font-family: 'Baloo 2', cursive;
+    font-size: 70px;
+    letter-spacing: 2px;
+    z-index: 2;
+    margin-right: 320px;
+    text-shadow: 0 0 15px rgb(18, 18, 54);
+    transition: 0.5s;
+}
+
+.portfolio:hover {
+    /* font-size: 65px; */
+    opacity: 0.5;
+}
+
+
+.cloudthree {
+    margin-top: 270px;
+    margin-right: 350px;
+    width: 200px;
+    height: 40px;
+    background: #2a78b9;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    animation-name: cloud3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+
+}
+
+.cloud7,
+.cloud8,
+.cloud9 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #2a78b9;
+}
+
+.cloud8 {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+    left: -15px;
+}
+
+.cloud9 {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 105px;
+}
+
+@keyframes cloud3 {
+    from {
+        right: -315px;
+        opacity: 0;
+
+    }
+
+    to {
+        right: 0;
+        opacity: 2;
+    }
+}
+
+.cloudfour {
+    margin-top: 400px;
+    margin-right: 145px;
+    width: 200px;
+    height: 40px;
+    background: #2a78b9;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    animation-name: cloud4;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+.cloud10,
+.cloud11,
+.cloud12 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #2a78b9;
+}
+
+.cloud11 {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+    left: -15px;
+}
+
+.cloud12 {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 105px;
+}
+
+@keyframes cloud4 {
+    from {
+        right: -145px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 2;
+    }
+}
+
+.cloudfive {
+    margin-top: 205px;
+    width: 200px;
+    height: 40px;
+    background: #2a78b9;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    animation-name: cloud5;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+.cloud13,
+.cloud14,
+.cloud15 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #2a78b9;
+}
+
+.cloud14 {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+    left: -15px;
+}
+
+.cloud15 {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 105px;
+}
+
+@keyframes cloud5 {
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+        right: 0;
+        opacity: 2;
+    }
+}
+
+.star {
+    margin-right: 50px;
+    margin-bottom: 490px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star2 {
+    margin-right: 70px;
+    margin-top: 500px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star3 {
+    margin-right: 450px;
+    margin-top: 460px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star4 {
+    margin-right: 750px;
+    margin-top: 330px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star5 {
+    margin-right: 710px;
+    margin-bottom: 450px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px white;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+@keyframes star {
+    from {
+        height: 2px;
+        width: 2px;
+        box-shadow: 0 0 5px white;
+    }
+
+    to {
+        height: 0px;
+        width: 0px;
+        border: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes cloud {
+    from {
+        right: -116px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 2;
+    }
+}
+
+.star6 {
+    margin-right: 350px;
+    margin-bottom: 410px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px white;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star7 {
+    margin-right: 590px;
+    margin-bottom: 200px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px white;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.star8 {
+    margin-right: 530px;
+    margin-bottom: 520px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px white;
+    animation-name: star;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+#downarrow {
+    animation-name: downarrow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+@keyframes downarrow {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#downarrow2 {
+    animation-name: downarrow2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+@keyframes downarrow2 {
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ufo-base {
+    border: 2px solid #a6a6e1;
+    margin-bottom: 0;
+    margin-top: 34px;
+    border-radius: 20px;
+    background-color: #a6a6e1;
+    height: 5px;
+    width: 80px;
+    position: absolute;
+    z-index: 0 !important;
+    opacity: 0.3;
+}
+
+.ufo-top {
+    border: 2px solid #a6a6e1;
+    margin-left: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-right: 4px;
+    background-color: #a6a6e1;
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    z-index: 0 !important;
+    opacity: 0.3;
+}
+
+.ufo {
+    position: absolute;
+    margin-left: 250px;
+    animation-name: ufo;
+    /* animation-timing-function: ease-out; */
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    z-index: 0 !important;
+}
+
+@keyframes ufo {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        transform: translateX(400px);
+    }
+
+    35% {
+        transform: translateY(-200px);
+        z-index: 0;
+    }
+
+    50% {
+        transform: translateY(-300px);
+    }
+
+    75% {
+        transform: translateX(-300px);
+    }
+
+    85% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.instagram {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    margin-bottom: 430px;
+    margin-right: 50px;
+    background-color: rgb(212, 96, 115);
+    height: 40px;
+    width: 180px;
+    z-index: 3;
+    right: -230px;
+    visibility: hidden;
+    animation-name: instagram;
+    animation-delay: 5s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes instagram {
+    0% {
+        right: -235px;
+    }
+
+    5% {
+        visibility: visible;
+        right: 0;
+    }
+
+    50% {
+        visibility: visible;
+        right: 0;
+    }
+
+    55% {
+        right: -235px;
+    }
+
+    100% {
+        right: -235px;
+    }
+}
+
+.ig-box {
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 140px;
+    color: white;
+    font-size: 15px;
+}
+
+.ig-name-box {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    width: 140px;
+    height: 18px;
+    background-color: white;
+    color: white;
+}
+
+.sym-box {
+    display: flex;
+    margin-left: 5px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.fa-brands fa-instagram {
+    color: white;
+}
+
+.ig {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ig-name {
+    text-decoration: none;
+    color:  rgb(212, 96, 115);
+    font-size: 15px;
+
+}
+.facebook {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    margin-top: 430px;
+    margin-right: 50px;
+    background-color: rgb(52, 11, 199);
+    height: 40px;
+    width: 180px;
+    z-index: 3;
+    right: -230px;
+    visibility: hidden;
+    animation-name: instagram;
+    animation-delay: 5s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+.fb-sym-box {
+    display: flex;
+    margin-left: 5px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.fa-brands fa-facebook-f {
+    color: white;
+}
+.fb {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fb-name {
+    text-decoration: none;
+    color:  rgb(52, 11, 199);
+    font-size: 15px;
+
+}
+.linkdin {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    margin-bottom: 430px;
+    margin-right: 1000px;
+    background-color: rgb(24, 66, 109);
+    height: 40px;
+    width: 180px;
+    z-index: 3;
+    left: -200px;
+    visibility: hidden;
+    animation-name: linkedin;
+    animation-delay: 5s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+.linkdin-box {
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 140px;
+    color: white;
+    font-size: 15px;
+}
+.lnkdn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.lnkdn-name-box {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    width: 140px;
+    height: 18px;
+    background-color: white;
+    color: white;
+}
+.lnkdn-name {
+    text-decoration: none;
+    color:  rgb(24, 66, 109);
+    font-size: 15px;
+}
+@keyframes linkedin {
+    0% {
+        left: -230px;
+    }
+
+    5% {
+        visibility: visible;
+        left: 50px;
+    }
+
+    50% {
+        visibility: visible;
+        left: 50px;
+    }
+
+    55% {
+        left: -230px;
+    }
+
+    100% {
+        left: -230px;
+    }
+}
+.youtube {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    margin-top: 430px;
+    margin-right: 1000px;
+    background-color: red;
+    height: 40px;
+    width: 180px;
+    z-index: 3;
+    left: -200px;
+    visibility: hidden;
+    animation-name: linkedin;
+    animation-delay: 5s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+.youtube-name {
+    text-decoration: none;
+    color:  red;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: url(pngtreebackground.png) no-repeat center center/cover;
+    align-items: center;
+    justify-content: right;
+}
+
+.moon {
+    display: flex;
+    position: absolute;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0 0 15px 6px white;
+    height: 360px;
+    width: 360px;
+    border-radius: 180px;
+    margin-right: 53px;
+    z-index: 1;
+}
+
+.darkspot1 {
+    position: absolute;
+    background-color: #eae3e3;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 70px;
+    margin-top: 90px;
+    z-index: 2;
+    opacity: 0.5;
+
+}
+
+.darkspot2 {
+    position: absolute;
+    background-color: #eae3e3;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 155px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.cloud {
+    margin-right: 315px;
+    margin-bottom: 205px;
+    width: 200px;
+    height: 40px;
+    background: #a3bdd2;
+    border-radius: 50px;
+    position: relative;
+    animation-name: cloud1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #a3bdd2;
+}
+
+.cloud2 {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+    left: -15px;
+}
+
+.cloud3 {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 105px;
+}
+
+@keyframes cloud1 {
+    from {
+        right: -315px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 2;
+    }
+}
+
+.cloudtwo {
+    margin-bottom: 310px;
+    margin-right: 116px;
+    width: 200px;
+    height: 40px;
+    background: #a3bdd2;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: cloud;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+.cloud4,
+.cloud5,
+.cloud6 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #a3bdd2;
+}
+
+.cloud5 {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+    left: -15px;
+}
+
+.cloud6 {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 105px;
+}
